@@ -9,8 +9,8 @@
         },
         "cs": {
           "AC-View-ID": "{{catalogViewUUID}}",
-          "AC-Price-Book-ID": "{{priceBookID}}",            # Optional. Remove if not needed.
-          "AC-Policy-{{attributeTrigger}}": "{{attributeValue}}"  # Optional. Remove this header if not needed.
+          "AC-Price-Book-ID": "{{priceBookID}}",            
+          "AC-Policy-{{attributeTrigger}}": "{{attributeValue}}" 
         }
       },
       "analytics": {
