@@ -12,7 +12,8 @@
           "AC-Price-Book-ID": "west_coast_inc",
           "ac-scope-locale": "en-US",
           "AC-Source-Locale": "en-US",
-          "ac-environment-id": "QLAfBfzromvPvMhhu1D5vN"
+          "ac-environment-id": "QLAfBfzromvPvMhhu1D5vN",
+          "x-api-key": "4dfa19c9fe6f4cccade55cc5b3da94f7"
         }
       },
       "analytics": {
