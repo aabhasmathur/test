@@ -11,7 +11,8 @@
           "AC-View-ID": "bbfbd98d-9b34-4857-9619-89d14c426ec9",
           "AC-Price-Book-ID": "west_coast_inc",
           "ac-scope-locale": "en-US",
-          "ac-environment-id": "QLAfBfzromvPvMhhu1D5vN"
+          "ac-environment-id": "QLAfBfzromvPvMhhu1D5vN",
+          "AC-Source-Locale": "west_coast_inc"
         }
       },
       "analytics": {
