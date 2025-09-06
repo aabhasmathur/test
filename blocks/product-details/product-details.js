@@ -70,6 +70,7 @@ export default async function decorate(block) {
       <div class="product-details__right-column">
         <div class="product-details__header"></div>
         <div class="product-details__price"></div>
+        <div class="product-details__brand"></div> 
         <div class="product-details__gallery"></div>
         <div class="product-details__short-description"></div>
         <div class="product-details__configuration">
@@ -90,6 +91,7 @@ export default async function decorate(block) {
   const $gallery = fragment.querySelector('.product-details__gallery');
   const $header = fragment.querySelector('.product-details__header');
   const $price = fragment.querySelector('.product-details__price');
+  const $brand = fragment.querySelector('.product-details__brand'); 
   const $galleryMobile = fragment.querySelector('.product-details__right-column .product-details__gallery');
   const $shortDescription = fragment.querySelector('.product-details__short-description');
   const $options = fragment.querySelector('.product-details__options');
@@ -165,6 +167,19 @@ export default async function decorate(block) {
 
     // Price
     pdpRendered.render(ProductPrice, {})($price),
+
+
+    // Brand
+(async () => {
+  const brandAttr = product?.attributes?.find((attr) => attr.name === 'brand');
+  if (brandAttr?.value) {
+    const brandDiv = document.createElement('div');
+    brandDiv.className = 'product-brand';
+    brandDiv.textContent = `Brand: ${brandAttr.value}`;
+    $brand.appendChild(brandDiv);
+  }
+})(),
+
 
     // Short Description
     pdpRendered.render(ProductShortDescription, {})($shortDescription),
